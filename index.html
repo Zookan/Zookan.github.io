@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Enzo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="menu">
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="arrow"></span>
+            </button>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#about" data-translate="about">Qui suis-je ?</a></li>
+                    <li><a href="#parcours" data-translate="timeline">Parcours</a></li>
+                    <li><a href="#competences" data-translate="skills">Compétences</a></li>
+                    <li><a href="#hobbies" data-translate="hobbies">Hobbies</a></li>
+                </ul>
+                <div class="nav-footer">
+                    <button id="language-switcher" class="language-switcher">FR</button>
+                    <a href="cv_onesti_enzo.pdf" download class="download-cv">CV</a>
+                </div>
+            </nav>
+        </div>
+
+        <div id="identity">
+            <button class="identity-toggle" aria-label="Informations d'identité">
+                <span class="identity-arrow"></span>
+            </button>
+            <nav class="identity-nav">
+                <h3 class="identity-title" data-translate="identityTitle">Informations</h3>
+                <ul class="identity-list">
+                    <li class="identity-item">
+                        <span data-translate="nameLabel">Nom</span>
+                        <span class="identity-value">ONESTI Enzo</span>
+                    </li>
+                    <li class="identity-item">
+                        <span data-translate="ageLabel">Âge</span>
+                        <span class="identity-value">26</span>
+                    </li>
+                    <li class="identity-item">
+                        <span data-translate="locationLabel">Localisation</span>
+                        <span class="identity-value">Toulouse, France</span>
+                    </li>
+                    <li class="identity-item">
+                        <span data-translate="emailLabel">Email</span>
+                        <span class="identity-value">enzo.onesti@gmail.com</span>
+                    </li>
+                    <li class="identity-item">
+                        <span data-translate="phoneLabel">Téléphone</span>
+                        <span class="identity-value">+33 6 98 55 92 85</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="softskills">
+            <button class="softskills-toggle">
+                <div class="softskills-arrow"></div>
+            </button>
+            <nav class="softskills-nav">
+                <h3 class="softskills-title" data-translate="softskillsTitle">Soft Skills</h3>
+                <ul class="softskills-list">
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="communicationLabel">Communication</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="teamworkLabel">Travail d'équipe</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="adaptabilityLabel">Adaptabilité</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="leadershipLabel">Leadership</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="organizationLabel">Organisation</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="curiosityLabel">Curiosité</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="motivationLabel">Motivation</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="stressManagementLabel">Gestion du stress</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="autonomyLabel">Autonomie</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                    <li class="softskills-item">
+                        <span class="softskills-label" data-translate="punctualityLabel">Ponctualité</span>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="about" class="about-section">
+            <h1 class="about-title">ENZO ONESTI</h1>
+            <!-- <h2 class="about-subtitle">Développeur Full-Stack</h2> -->
+            <img src="images/logo.png" alt="logo" class="imageLogo">
+            <div class="about-container">
+                <div class="about-content">
+                    <p data-translate="aboutContent">Passionné par le développement web et l'innovation technologique, je m'efforce de créer des solutions numériques qui allient esthétique et fonctionnalité. Avec une solide formation en développement full-stack et une expérience diversifiée, je m'adapte rapidement aux nouveaux défis et technologies.</p>
+                    <p data-translate="aboutContent2">Mon approche du développement est centrée sur l'utilisateur, en privilégiant toujours la qualité du code et l'expérience utilisateur. Je crois en l'apprentissage continu et en la collaboration pour créer des projets exceptionnels.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label" data-translate="yearsExp">Années d'expérience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">9+</div>
+                            <div class="stat-label" data-translate="projectsDone">Projets réalisés</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="projets" class="entête-section">
+                    <div id="contact" class="entête-section">
+                        <div class="contact-container">
+                            <div class="contact-card">
+                                <img src="images/linkedin.png" alt="LinkedIn" class="contact-image">
+                                <div class="contact-content">
+                                    <h3 data-translate="linkedinTitle">LinkedIn</h3>
+                                    <p data-translate="linkedinDesc">Connectez-vous avec moi sur LinkedIn pour en savoir plus sur mon parcours professionnel.</p>
+                                    <a href="https://www.linkedin.com/in/enzo-onesti/" target="_blank" class="contact-link" data-translate="visitProfile">Visiter mon profil</a>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <img src="images/github.png" alt="GitHub" class="contact-image">
+                                <div class="contact-content">
+                                    <h3 data-translate="githubTitle">GitHub</h3>
+                                    <p data-translate="githubDesc">Découvrez mes projets et contributions de développement d'applications sur GitHub.</p>
+                                    <a href="https://github.com/Zookan" target="_blank" class="contact-link" data-translate="seeProjects">Voir mes projets</a>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <img src="images/itchio.png" alt="Itchio" class="contact-image">
+                                <div class="contact-content">
+                                    <h3 data-translate="itchioTitle">Itch.io</h3>
+                                    <p data-translate="itchioDesc">Découvrez mes projets et contributions de développement de jeux vidéo sur Itch.io.</p>
+                                    <a href="https://enzoonesti.itch.io" target="_blank" class="contact-link" data-translate="seeProjects">Voir mes projets</a>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <img src="images/mail.png" alt="Email" class="contact-image">
+                                <div class="contact-content">
+                                    <h3 data-translate="emailTitle">Email</h3>
+                                    <p data-translate="emailDesc">Contactez-moi directement par email pour toute opportunité ou collaboration.</p>
+                                    <a href="mailto:enzo.onesti@gmail.com" class="contact-link" data-translate="sendEmail">Envoyer un email</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-card active">
+                            <h3 data-translate="babyfmTitle">Babyfm</h3>
+                            <p data-translate="babyfmDesc">Web radio pour enfants faite à deux pour un client. Le projet a été développé en Java Spring Boot et React. Le but était de développer un site web proposant des musique pour enfant de manière simple et efficace. Il y a aussi des berceuses et des histoires pour les plus petits.</p>
+                            <br>
+                            <a href="https://babyfm.fr" target="_blank" data-translate="seeProject">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3 data-translate="cursedTitle">Cursed</h3>
+                            <p data-translate="cursedDesc">Rogue-like en 2D développé en C# avec Unity. Plongez en 2056 dans un monde cyberpunk, au cœur de Youman Industries, une entreprise qui produit des androïdes pour intégrer la société. Dans une salle de test, vous devrez réussir divers tests physiques pour trouver et affronter les vôtres.</p>
+                            <br>
+                            <a href="https://enzoonesti.itch.io/cursed" target="_blank" data-translate="seeProject">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3 data-translate="pardawanTitle">Pardawan</h3>
+                            <p data-translate="pardawanDesc">Site vitrine pour les titres diplomants de Dawan. Le but était de concevoir, maquetter et développer le nouveau site de Pardawan à l'aide d'Angular pour la partie front-end, en Java avec le framework Spring pour le back-end avec une base de données type Maria DB.</p>
+                            <br>
+                            <a href="https://pardawan.com/#/" target="_blank" data-translate="seeProject">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3 data-translate="jobhunterTitle">Job Hunter</h3>
+                            <p data-translate="jobhunterDesc">Projet sur deux semaines à trois développeurs lors d'un formation IA. Le but était de créer un site web qui permette à des personnes de trouver des emplois en fonction de leurs compétences et de leurs préférences avec une IA qui donne un retour sur la pertinance de leur CV.</p>
+                            <br>
+                            <a href="https://www.youtube.com/watch?v=-P_pgxZMovs" target="_blank" data-translate="seeProject">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3 data-translate="eraTitle">En recherche active</h3>
+                            <p data-translate="eraDesc">Site de suivit des candidatures pour les alternants et conseillers emplois formations de Dawan. Optimiser le site et ajouter de nouvelles fonctionnalités pour améliorer l'expérience utilisateur. Le site est en Java Spring et vue JS, avec une base de données MySQL.</p>
+                            <br>
+                            <a href="https://en-recherche-active.com/#/" target="_blank" data-translate="seeProject">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3 data-translate="enigmalchemyTitle">Enigmalchemy</h3>
+                            <p data-translate="enigmalchemyDesc">Jeu produit sur une game jam avec un groupe de 7 personnes en 2 semaines. Le but était de créer un jeu en 3D en utilisant Unity avec pour thème "secret". Résoudre des énigmes et découvrir des indices pour connaître le fin mot de l'histoire et ce qui se cache derrière ses lieux mystiques.</p>
+                            <br>
+                            <a href="https://ceritrus.itch.io/enigmalchemy" target="_blank" data-translate="seeProject">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3 data-translate="mikrokosmoTitle">Mikro Kosmo</h3>
+                            <p data-translate="mikrokosmoDesc">Projet sur deux jours à trois développeurs lors d'une game jam. La contrainte était contrôle seulement avec la souris, de cela découle le nom du jeu Mikro Kosmo, un jeu sur Unity, où l'on doit reconnecter les chemins des différentes planètes su système.</p>
+                            <br>
+                            <a href="https://teywz.itch.io/mikro-kosmo" target="_blank" data-translate="seeProject">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="prevBtn" onclick="changeProject(-1)" data-translate="prevBtn">Précédent</button>
+                        <button class="carousel-btn" id="nextBtn" onclick="changeProject(1)" data-translate="nextBtn">Suivant</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="parcours" class="entête-section">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date" data-translate="november2024">novembre 2024</span> - <span class="date" data-translate="present">Présent</span>
+                        <h3 data-translate="masterTitle">Mastère Expert IT - applications inteligentes et big data</h3>
+                        <p data-translate="masterDesc">Formation sur 2 ans en alternance dans le domaine du développement et de l'IA.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date" data-translate="july2024">juillet 2024</span> - <span class="date" data-translate="october2024">octobre 2024</span>
+                        <h3 data-translate="aiTrainingTitle">Formation développeur IA</h3>
+                        <p data-translate="aiTrainingDesc">Formation en 3 mois sur les bases du développement d'applications IA.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date" data-translate="february2023">février 2023</span> - <span class="date" data-translate="february2024">février 2024</span>
+                        <h3 data-translate="cdaTitle">Licence Concepteur Développeur d'Applications</h3>
+                        <p data-translate="cdaDesc">Formation sur 1 an en alternance dans le domaine du développement d'applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date" data-translate="november2022">novembre 2022</span> - <span class="date" data-translate="january2023">janvier 2023</span>
+                        <h3 data-translate="dotnetTitle">Formation .NET C#</h3>
+                        <p data-translate="dotnetDesc">Formation en 3 mois sur les bases de la programmation en C#.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date" data-translate="july2020">juillet 2020</span> - <span class="date" data-translate="december2020">décembre 2020</span>
+                        <h3 data-translate="qaTitle">QA testeur</h3>
+                        <p data-translate="qaDesc">Stage de 6 mois en tant que testeur QA pour Microids Studio.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date" data-translate="september2017">septembre 2017</span> - <span class="date" data-translate="june2020">juin 2020</span>
+                        <h3 data-translate="gameDesignTitle">Ecole de Game Design & Creative Coding</h3>
+                        <p data-translate="gameDesignDesc">Bac +3 en conception et développement de jeux vidéo et de jeux de société.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date" data-translate="june2017">juin 2017</span>
+                        <h3 data-translate="bacTitle">Baccalauréat STI2D</h3>
+                        <p data-translate="bacDesc">Diplôme du baccalauréat technologique option Systèmes d'Information et Numérique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="entête-section">
+            <div class="competences-grid">
+                <div class="competence-card">
+                    <img src="images/spring.png" alt="Front-end" class="competence-logo">
+                    <h3 data-translate="springTitle">Java Spring</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/dotnet.png" alt="Back-end" class="competence-logo">
+                    <h3 data-translate="sharpTitle">C# .NET</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/python.png" alt="Mobile" class="competence-logo">
+                    <h3 data-translate="pythonTitle">Python Django</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/html_css.png" alt="Design" class="competence-logo">
+                    <h3 data-translate="htmlcssTitle">HTML CSS</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/JavaScript.png" alt="Design" class="competence-logo">
+                    <h3 data-translate="jsTitle">JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/React.png" alt="Outils" class="competence-logo">
+                    <h3 data-translate="reactTitle">REACT</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/Angular.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="angularTitle">Angular</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/vue.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="vueTitle">VUE JS</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/sql.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="sqlTitle">SQL</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/php.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="phpTitle">PHP</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 40%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/Git.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="gitTitle">GIT</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/Figma.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="figmaTitle">Figma</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/photoshop.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="photoshopTitle">Photoshop</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/unity.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="unityTitle">Unity</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/unreal.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="unrealTitle">Unreal Engine</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="competence-card">
+                    <img src="images/openai.png" alt="Sécurité" class="competence-logo">
+                    <h3 data-translate="aiTitle">Dev IA</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="entête-section">
+            <div class="hobbies-container">
+                <div class="hobby-card">
+                    <img src="images/sport.jpg" alt="Sports" class="hobby-image">
+                    <div class="hobby-content">
+                        <h3 data-translate="sportsTitle">Sports & automobiles</h3>
+                        <p data-translate="sportsDesc">Depuis longtemps fan de sport en tout genre, surtout les sports d'équipes et les sports automobiles.
+                            J'ai pratiqué du football pendant 10 ans et du handball pendant 3 ans. Je suis les championnats de foot à travers l'europe ainsi 
+                            que la Formule 1.
+                        </p>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <img src="images/games.jpg" alt="Jeux vidéo" class="hobby-image">
+                    <div class="hobby-content">
+                        <h3 data-translate="gamesTitle">Jeux vidéo</h3>
+                        <p data-translate="gamesDesc">Depuis tout petit, j'aime beaucoup jouer et c'est ce qui m'a motiver à diriger mes études vers la conception et le développement
+                            aussi bien de jeu que d'application.</p>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <img src="images/cinema.jpg" alt="Cinéma" class="hobby-image">
+                    <div class="hobby-content">
+                        <h3 data-translate="cinemaTitle">Cinéma</h3>
+                        <p data-translate="cinemaDesc">Cinéphile, regarder des films et des séries en tout genres me passionne et m'inspire au quotidien. 
+                            Imagner des concepts sur mes films préférés me permet de m'amuser et de me détendre.</p>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <img src="images/manga.jpg" alt="Mangas" class="hobby-image">
+                    <div class="hobby-content">
+                        <h3 data-translate="mangaTitle">Manga & culture japonaise</h3>
+                        <p data-translate="mangaDesc">La culture japonaise et les univers fantastiques sont une inspiration pour moi. J'aime beaucoup lire des mangas et regarder des animes.
+                            Je suis aussi fan de la mythologie et les légendes aussi bien japonaise que grecque, egyptienne ou nordique.
+                        </p>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <img src="images/dessin.jpg" alt="Dessin" class="hobby-image">
+                    <div class="hobby-content">
+                        <h3 data-translate="drawingTitle">Dessin & Jeux de rôle</h3>
+                        <p data-translate="drawingDesc">J'aime beaucoup imaginer et dessiner des univers fantastiques et des personnages.
+                            J'aime aussi jouer à des jeux de rôle avec mes amis et en créer.
+                        </p>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <img src="images/informatique.jpg" alt="Informatique" class="hobby-image">
+                    <div class="hobby-content">
+                        <h3 data-translate="infoTitle">Informatique & numérique</h3>
+                        <p data-translate="infoDesc">L'informatique et les nouvelles technologies sont une passion pour moi. 
+                            J'aime apprendre de nouvelles choses et m'améliorer dans le développement web et mobile.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Enzo. <span data-translate="copyright">Tous droits réservés.</span></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="translations.js"></script>
+    <script src="language-switcher.js"></script>
+</body>
+</html>
