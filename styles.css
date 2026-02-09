@@ -140,7 +140,8 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.language-switcher, .download-cv {
+.language-switcher,
+.download-cv {
     background: var(--secondary-color);
     color: var(--primary-color);
     border: 2px solid var(--border-color);
@@ -154,13 +155,15 @@ body {
     clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
 }
 
-.language-switcher:hover, .download-cv:hover {
+.language-switcher:hover,
+.download-cv:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     box-shadow: 0 0 15px var(--accent-color);
 }
 
-.language-switcher:active, .download-cv:active {
+.language-switcher:active,
+.download-cv:active {
     transform: scale(0.95);
 }
 
@@ -283,14 +286,20 @@ section::before {
 }
 
 /* Autres éléments avec bordures complètes */
-.card, .contact-content, .competence-card, .project-card {
+.card,
+.contact-content,
+.competence-card,
+.project-card {
     border: 2px solid var(--border-color);
     box-shadow: 0 0 10px var(--accent-color);
     position: relative;
     overflow: hidden;
 }
 
-.card::before, .contact-content::before, .competence-card::before, .project-card::before {
+.card::before,
+.contact-content::before,
+.competence-card::before,
+.project-card::before {
     content: '';
     position: absolute;
     top: -2px;
@@ -981,4 +990,375 @@ section::before {
 .identity-value {
     font-weight: normal;
     color: var(--white-color);
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+   ========================= */
+@media screen and (max-width: 768px) {
+
+    /* Global */
+    body {
+        background: var(--secondary-color);
+        background-image: none;
+    }
+
+    section {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    /* =========================
+       ABOUT
+       ========================= */
+    .about-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* =========================
+       CONTACT
+       ========================= */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+
+    .contact-content {
+        position: relative;
+        display: block;
+        transform: none;
+        top: auto;
+        left: auto;
+        margin-top: 1rem;
+    }
+
+    /* =========================
+       PROJECTS
+       ========================= */
+    .project-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .project-card {
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .project-card p {
+        font-size: 0.95rem;
+    }
+
+    .carousel-controls {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* =========================
+       TIMELINE
+       ========================= */
+    .timeline::after {
+        left: 10px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-item::after {
+        left: 0;
+        right: auto;
+    }
+
+    .timeline-item:nth-child(even),
+    .timeline-item:nth-child(odd) {
+        left: 0;
+    }
+
+    /* =========================
+       COMPETENCES
+       ========================= */
+    .competences-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .competence-card {
+        padding: 1.2rem;
+    }
+
+    .competence-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* =========================
+       HOBBIES
+       ========================= */
+    .hobbies-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .hobby-card {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        height: 220px;
+    }
+
+    .hobby-content {
+        transform: translateY(0);
+        font-size: 0.9rem;
+    }
+
+    /* =========================
+       MENUS FLOTTANTS
+       ========================= */
+    .main-nav {
+        right: 1rem;
+        left: 1rem;
+        width: auto;
+    }
+
+    .softskills-nav,
+    .identity-nav {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .softskills-item,
+    .identity-item {
+        font-size: 1rem;
+    }
+
+    /* =========================
+       FOOTER
+       ========================= */
+    .copyright {
+        font-size: 0.8rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* =========================
+   RESPONSIVE MOBILE – PANELS INLINE
+   ========================= */
+@media screen and (max-width: 768px) {
+
+    /* =========================
+       SUPPRESSION DES BOUTONS
+       ========================= */
+    .identity-toggle,
+    .softskills-toggle {
+        display: none;
+    }
+
+    /* =========================
+       IDENTITY → INLINE
+       ========================= */
+    #identity {
+        position: relative;
+        margin: 2rem auto;
+        max-width: 1200px;
+        padding: 0 1rem;
+    }
+
+    .identity-nav {
+        position: relative;
+        transform: none;
+        top: auto;
+        right: auto;
+        width: 100%;
+        border-radius: 10px;
+        clip-path: none;
+    }
+
+    .identity-nav.active {
+        transform: none;
+    }
+
+    .identity-list {
+        gap: 0.5rem;
+    }
+
+    .identity-item {
+        font-size: 1rem;
+    }
+
+    /* =========================
+       SOFTSKILLS → INLINE
+       ========================= */
+    #softskills {
+        position: relative;
+        margin: 2rem auto;
+        max-width: 1200px;
+        padding: 0 1rem;
+    }
+
+    .softskills-nav {
+        position: relative;
+        transform: none;
+        top: auto;
+        left: auto;
+        width: 100%;
+        border-radius: 10px;
+        clip-path: none;
+    }
+
+    .softskills-nav.active {
+        transform: none;
+    }
+
+    .softskills-item {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .rating .star {
+        font-size: 1rem;
+    }
+
+    /* =========================
+       APLATIR LES CARTES
+       ========================= */
+    .card,
+    .contact-content,
+    .competence-card,
+    .project-card,
+    .stat-item,
+    .timeline-content {
+        box-shadow: none;
+        border: none;
+    }
+
+    .card::before,
+    .contact-content::before,
+    .competence-card::before,
+    .project-card::before {
+        display: none;
+    }
+
+    /* =========================
+       Z-INDEX CLEAN
+       ========================= */
+    section,
+    #identity,
+    #softskills {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* =========================
+       MENUS AU-DESSUS DE TOUT
+       ========================= */
+    .main-nav {
+        z-index: 3000;
+    }
+
+    .menu-toggle {
+        z-index: 3001;
+    }
+
+    /* Softskills & Identity (inline, même plan) */
+    .identity-nav,
+    .softskills-nav {
+        z-index: 1;
+        background: rgba(26, 26, 26, 1);
+    }
+
+    /* =========================
+       HOVER → MOBILE SAFE
+       ========================= */
+    .hobby-card:hover .hobby-content,
+    .contact-card:hover .contact-content {
+        transform: none;
+    }
+
+}
+
+/* =========================
+   RESPONSIVE MOBILE – REORDER SECTIONS
+   ========================= */
+@media screen and (max-width: 768px) {
+
+    /* Main devient une colonne ordonnée */
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ===== Ordre global ===== */
+    #about {
+        order: 1;
+    }
+
+    #parcours {
+        order: 2;
+    }
+
+    #competences {
+        order: 3;
+    }
+
+    #softskills {
+        order: 4;
+    }
+
+    #hobbies {
+        order: 5;
+    }
+
+    #identity {
+        order: 6;
+    }
+
+    #references {
+        order: 7;
+    }
+
+
+    /* =========================
+       INLINE PANELS (rappel)
+       ========================= */
+
+    .identity-toggle,
+    .softskills-toggle {
+        display: none;
+    }
+
+    .identity-nav,
+    .softskills-nav {
+        position: relative;
+        transform: none;
+        width: 100%;
+        clip-path: none;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
 }

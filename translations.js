@@ -84,7 +84,7 @@ const translations = {
         // Informations d'identité
         identityTitle: "Informations",
         nameLabel: "Nom",
-        ageLabel: "Âge",
+        ageLabel: "Date de naissance",
         locationLabel: "Localisation",
         emailLabel: "Email",
         phoneLabel: "Téléphone",
@@ -208,7 +208,7 @@ const translations = {
         // Identity Information
         identityTitle: "Information",
         nameLabel: "Name",
-        ageLabel: "Age",
+        ageLabel: "Birth date",
         locationLabel: "Location",
         emailLabel: "Email",
         phoneLabel: "Phone",
